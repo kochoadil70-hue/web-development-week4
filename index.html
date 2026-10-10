@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">T</div>
+          <div>
+            <p class="brand-label">Workspace</p>
+            <h1>Tracker</h1>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a class="nav-item active" href="#">Overview</a>
+          <a class="nav-item" href="#">Tasks</a>
+          <a class="nav-item" href="#">Calendar</a>
+          <a class="nav-item" href="#">Reports</a>
+          <a class="nav-item" href="#">Settings</a>
+        </nav>
+
+        <div class="side-card">
+          <p>Monthly goal</p>
+          <div class="goal-ring">
+            <span>76%</span>
+          </div>
+          <div class="goal-meta">
+            <strong>4/5</strong>
+            <small>Milestones hit</small>
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Good morning</p>
+            <h2>Weekly progress</h2>
+          </div>
+
+          <div class="header-actions">
+            <button class="ghost-btn">Export</button>
+            <button class="primary-btn">+ New Task</button>
+          </div>
+        </header>
+
+        <section class="stats-grid" aria-label="Project statistics">
+          <article class="stat-card blue-card">
+            <div class="stat-top">
+              <span class="stat-label">Total tasks</span>
+              <span class="trend up">+12%</span>
+            </div>
+            <h3>128</h3>
+            <p>Across 6 active projects</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-label">On track</span>
+              <span class="trend up">+8%</span>
+            </div>
+            <h3>94</h3>
+            <p>Tasks moving as planned</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-label">Due today</span>
+              <span class="trend warn">4</span>
+            </div>
+            <h3>09</h3>
+            <p>Items need attention</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-top">
+              <span class="stat-label">Completion</span>
+              <span class="trend up">+15%</span>
+            </div>
+            <h3>81%</h3>
+            <p>Average sprint completion</p>
+          </article>
+        </section>
+
+        <section class="main-grid">
+          <article class="panel progress-panel">
+            <div class="panel-head">
+              <h3>Progress overview</h3>
+              <span class="chip">This week</span>
+            </div>
+
+            <div class="progress-list">
+              <div class="progress-row">
+                <div class="label-group">
+                  <span class="bar-name">Design</span>
+                  <span class="bar-value">84%</span>
+                </div>
+                <div class="track"><span style="width: 84%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label-group">
+                  <span class="bar-name">Development</span>
+                  <span class="bar-value">68%</span>
+                </div>
+                <div class="track"><span style="width: 68%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label-group">
+                  <span class="bar-name">Research</span>
+                  <span class="bar-value">52%</span>
+                </div>
+                <div class="track"><span style="width: 52%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label-group">
+                  <span class="bar-name">Launch</span>
+                  <span class="bar-value">39%</span>
+                </div>
+                <div class="track"><span style="width: 39%"></span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel schedule-panel">
+            <div class="panel-head">
+              <h3>Daily schedule</h3>
+              <span class="chip muted">Tue</span>
+            </div>
+
+            <ul class="timeline">
+              <li>
+                <div class="time">08:30</div>
+                <div class="timeline-text">
+                  <strong>Stand-up</strong>
+                  <span>Team sync</span>
+                </div>
+              </li>
+              <li>
+                <div class="time">10:15</div>
+                <div class="timeline-text">
+                  <strong>UI review</strong>
+                  <span>Homepage polish</span>
+                </div>
+              </li>
+              <li>
+                <div class="time">13:00</div>
+                <div class="timeline-text">
+                  <strong>Client call</strong>
+                  <span>Progress update</span>
+                </div>
+              </li>
+              <li>
+                <div class="time">15:45</div>
+                <div class="timeline-text">
+                  <strong>QA pass</strong>
+                  <span>Test sprint</span>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel focus-panel">
+            <div class="panel-head">
+              <h3>Today's focus</h3>
+              <span class="chip success">3 tasks</span>
+            </div>
+
+            <div class="focus-list">
+              <div class="focus-item done">
+                <span class="check"></span>
+                <div>
+                  <strong>Landing page wireframe</strong>
+                  <small>Complete</small>
+                </div>
+              </div>
+
+              <div class="focus-item active">
+                <span class="check"></span>
+                <div>
+                  <strong>Prototype feedback</strong>
+                  <small>In review</small>
+                </div>
+              </div>
+
+              <div class="focus-item pending">
+                <span class="check"></span>
+                <div>
+                  <strong>Bug fix checklist</strong>
+                  <small>Waiting</small>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel activity-panel">
+            <div class="panel-head">
+              <h3>Recent activity</h3>
+              <span class="chip muted">Updated</span>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="dot blue"></span>
+                <div>
+                  <strong>Bug fix in onboarding flow</strong>
+                  <small>2 hours ago</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="dot green"></span>
+                <div>
+                  <strong>New sprint goals assigned</strong>
+                  <small>Today</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="dot purple"></span>
+                <div>
+                  <strong>Client approved design preview</strong>
+                  <small>Yesterday</small>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel milestones-panel">
+            <div class="panel-head">
+              <h3>Milestones</h3>
+              <span class="chip muted">5</span>
+            </div>
+
+            <div class="board-grid">
+              <div class="milestone-card milestone-a">
+                <span class="badge">Design</span>
+                <h4>Homepage refresh</h4>
+                <p>72% complete</p>
+              </div>
+
+              <div class="milestone-card milestone-b">
+                <span class="badge">Data</span>
+                <h4>Analytics setup</h4>
+                <p>54% complete</p>
+              </div>
+
+              <div class="milestone-card milestone-c">
+                <span class="badge">QA</span>
+                <h4>Regression test</h4>
+                <p>88% complete</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
